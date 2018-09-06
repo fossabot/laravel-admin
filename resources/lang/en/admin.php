@@ -97,6 +97,7 @@ return [
         'filter_clear'       => 'Show all',
         'filter_placeholder' => 'Filter',
     ],
+    'member_since' => 'Member since',
 
     'menu_titles' => [],
 ];

@@ -97,6 +97,7 @@ return [
         'filter_clear'       => 'Показать все',
         'filter_placeholder' => 'Фильтр',
     ],
+    'member_since' => 'Зарегистрирован',
 
     'menu_titles' => [],
 ];
