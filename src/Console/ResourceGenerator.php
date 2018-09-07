@@ -185,7 +185,11 @@ class ResourceGenerator
 
         foreach ($this->getTableColumns() as $column) {
             $name = $column->getName();
-            $label = $this->formatLabel($name);
+            if (trans('admin.stub.'.$name)) {
+                $label = trans('admin.stub.'.$name);
+            } else {
+                $label = $this->formatLabel($name);
+            }
 
             $output .= sprintf($this->formats['grid_column'], $name, $label);
             $output .= ";\r\n";

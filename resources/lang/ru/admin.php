@@ -100,4 +100,10 @@ return [
     'member_since' => 'Зарегистрирован',
 
     'menu_titles' => [],
+
+    'stub' => [
+        'id' => 'ID',
+        'created_at' => 'Дата создания',
+        'updated_at' => 'Дата изменения'
+    ]
 ];

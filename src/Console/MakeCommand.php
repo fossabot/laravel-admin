@@ -34,7 +34,7 @@ class MakeCommand extends GeneratorCommand
     public function handle()
     {
         if (!$this->modelExists()) {
-            $this->error('Model does not exists !');
+            $this->error('Model does not exists!');
 
             return false;
         }
