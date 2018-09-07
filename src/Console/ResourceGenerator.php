@@ -147,7 +147,11 @@ class ResourceGenerator
 
             $defaultValue = $defaultValue ?: $default;
 
-            $label = $this->formatLabel($name);
+            if (\Lang::has('admin.stub.'.$name)) {
+                $label = trans('admin.stub.'.$name);
+            } else {
+                $label = $this->formatLabel($name);
+            }
 
             $output .= sprintf($this->formats['form_field'], $fieldType, $name, $label);
 
@@ -169,7 +173,11 @@ class ResourceGenerator
             $name = $column->getName();
 
             // set column label
-            $label = $this->formatLabel($name);
+            if (\Lang::has('admin.stub.'.$name)) {
+                $label = trans('admin.stub.'.$name);
+            } else {
+                $label = $this->formatLabel($name);
+            }
 
             $output .= sprintf($this->formats['show_field'], $name, $label);
 
@@ -185,7 +193,7 @@ class ResourceGenerator
 
         foreach ($this->getTableColumns() as $column) {
             $name = $column->getName();
-            if (trans('admin.stub.'.$name)) {
+            if (\Lang::has('admin.stub.'.$name)) {
                 $label = trans('admin.stub.'.$name);
             } else {
                 $label = $this->formatLabel($name);
