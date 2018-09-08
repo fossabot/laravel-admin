@@ -18,7 +18,7 @@ class Icon extends Text
     {
         $this->script = <<<EOT
 
-$('{$this->getElementClassSelector()}').iconpicker({placement:'bottomLeft'});
+$('{$this->getElementClassSelector()}').iconpicker({placement: 'bottomLeft', hideOnSelect: true});
 
 EOT;
 
