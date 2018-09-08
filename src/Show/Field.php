@@ -249,14 +249,14 @@ class Field implements Renderable
             return <<<HTML
 <ul class="mailbox-attachments clearfix">
     <li style="margin-bottom: 0;">
-      <span class="mailbox-attachment-icon"><i class="fa {$field->getFileIcon($name)}"></i></span>
+      <span class="mailbox-attachment-icon"><i class="{$field->getFileIcon($name)}"></i></span>
       <div class="mailbox-attachment-info">
         <div class="mailbox-attachment-name">
-            <i class="fa fa-paperclip"></i> {$name}
+            <i class="fas fa-paperclip"></i> {$name}
             </div>
             <span class="mailbox-attachment-size">
               {$size}&nbsp;
-              <a href="{$url}" class="btn btn-default btn-xs pull-right" target="_blank"><i class="fa fa-cloud-download"></i></a>
+              <a href="{$url}" class="btn btn-default btn-xs pull-right" target="_blank"><i class="fas fa-cloud-download"></i></a>
             </span>
       </div>
     </li>

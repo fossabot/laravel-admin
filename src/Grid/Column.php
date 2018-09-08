@@ -504,7 +504,7 @@ class Column
 
         $url = URL::current().'?'.http_build_query($query);
 
-        return "<a class=\"fa fa-fw $icon\" href=\"$url\"></a>";
+        return "<a class=\"fa-fw $icon\" href=\"$url\"></a>";
     }
 
     /**
