@@ -11,7 +11,7 @@
             <div class="pull-left info">
                 <p>{{ Admin::user()->name }}</p>
                 <!-- Status -->
-                <a href="#"><i class="fa fa-circle text-success"></i> {{ trans('admin.online') }}</a>
+                <a href="#"><i class="fas fa-circle text-success"></i> {{ trans('admin.online') }}</a>
             </div>
         </div>
 

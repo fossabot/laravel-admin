@@ -491,7 +491,7 @@ class Column
             return;
         }
 
-        $icon = 'fa-sort';
+        $icon = 'fas fa-sort';
         $type = 'desc';
 
         if ($this->isSorted()) {
@@ -504,7 +504,7 @@ class Column
 
         $url = URL::current().'?'.http_build_query($query);
 
-        return "<a class=\"fa fa-fw $icon\" href=\"$url\"></a>";
+        return "<a class=\"fa-fw $icon\" href=\"$url\"></a>";
     }
 
     /**

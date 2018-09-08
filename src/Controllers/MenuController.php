@@ -37,7 +37,7 @@ class MenuController extends Controller
 
                     $form->select('parent_id', trans('admin.parent_id'))->options(Menu::selectOptions());
                     $form->text('title', trans('admin.title'))->rules('required');
-                    $form->icon('icon', trans('admin.icon'))->default('fa-bars')->rules('required')->help($this->iconHelp());
+                    $form->icon('icon', trans('admin.icon'))->default('fas fa-bars')->rules('required')->help($this->iconHelp());
                     $form->text('uri', trans('admin.uri'));
                     $form->multipleSelect('roles', trans('admin.roles'))->options(Role::all()->pluck('name', 'id'));
                     $form->hidden('_token')->default(csrf_token());
@@ -68,7 +68,7 @@ class MenuController extends Controller
             $tree->disableCreate();
 
             $tree->branch(function ($branch) {
-                $payload = "<i class='fa {$branch['icon']}'></i>&nbsp;<strong>{$branch['title']}</strong>";
+                $payload = "<i class='{$branch['icon']} fa-fw'></i>&nbsp;<strong>{$branch['title']}</strong>";
 
                 if (!isset($branch['children'])) {
                     if (url()->isValidUrl($branch['uri'])) {
@@ -114,7 +114,7 @@ class MenuController extends Controller
 
         $form->select('parent_id', trans('admin.parent_id'))->options(Menu::selectOptions());
         $form->text('title', trans('admin.title'))->rules('required');
-        $form->icon('icon', trans('admin.icon'))->default('fa-bars')->rules('required')->help($this->iconHelp());
+        $form->icon('icon', trans('admin.icon'))->default('fas fa-bars')->rules('required')->help($this->iconHelp());
         $form->text('uri', trans('admin.uri'));
         $form->multipleSelect('roles', trans('admin.roles'))->options(Role::all()->pluck('name', 'id'));
 

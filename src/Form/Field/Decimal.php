@@ -24,7 +24,7 @@ class Decimal extends Text
 
         $this->script = "$('{$this->getElementClassSelector()}').inputmask($options);";
 
-        $this->prepend('<i class="fa fa-terminal fa-fw"></i>')
+        $this->prepend('<i class="fas fa-terminal fa-fw"></i>')
             ->defaultAttribute('style', 'width: 130px');
 
         return parent::render();

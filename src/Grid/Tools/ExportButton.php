@@ -69,7 +69,7 @@ SCRIPT;
         return <<<EOT
 
 <div class="btn-group pull-right" style="margin-right: 10px">
-    <a class="btn btn-sm btn-twitter" title="{$export}"><i class="fa fa-download"></i><span class="hidden-xs"> {$export}</span></a>
+    <a class="btn btn-sm btn-twitter" title="{$export}"><i class="fas fa-download"></i><span class="hidden-xs"> {$export}</span></a>
     <button type="button" class="btn btn-sm btn-twitter dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
         <span class="sr-only">Toggle Dropdown</span>
