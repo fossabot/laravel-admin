@@ -14,7 +14,7 @@ class Text extends Presenter
     /**
      * @var string
      */
-    protected $icon = 'pencil';
+    protected $icon = 'fas fa-pencil-alt';
 
     /**
      * @var string
@@ -158,7 +158,7 @@ class Text extends Presenter
      *
      * @return $this
      */
-    public function inputmask($options = [], $icon = 'pencil') : self
+    public function inputmask($options = [], $icon = 'fas fa-pencil-alt') : self
     {
         $options = json_encode($options);
 
