@@ -6,7 +6,7 @@
             @else
                  <a href="{{ admin_base_path($item['uri']) }}">
             @endif
-                <i class="{{$item['icon']}}"></i>
+                <i class="{{$item['icon']}} fa-fw"></i>
                 @if (Lang::has($titleTranslation = 'admin.menu_titles.' . trim(str_replace(' ', '_', strtolower($item['title'])))))
                     <span>{{ __($titleTranslation) }}</span>
                 @else
@@ -17,7 +17,7 @@
     @else
         <li class="treeview">
             <a href="#">
-                <i class="{{ $item['icon'] }}"></i>
+                <i class="{{ $item['icon'] }} fa-fw"></i>
                 @if (Lang::has($titleTranslation = 'admin.menu_titles.' . trim(str_replace(' ', '_', strtolower($item['title'])))))
                     <span>{{ __($titleTranslation) }}</span>
                 @else

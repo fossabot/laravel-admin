@@ -491,7 +491,7 @@ class Column
             return;
         }
 
-        $icon = 'fa-sort';
+        $icon = 'fas fa-sort';
         $type = 'desc';
 
         if ($this->isSorted()) {
