@@ -4,4 +4,6 @@
     <div class="pull-right hidden-xs">
         <strong>Version</strong>&nbsp;&nbsp; {!! config('admin.version') !!}
     </div>
+    <!-- Default to the left -->
+    <strong>&nbsp;</strong>
 </footer>
