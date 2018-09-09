@@ -171,7 +171,7 @@ $filter->equal('column')->currency($options = []);
 $filter->equal('column')->percentage($options = []);
 
 // $options refer to https://github.com/RobinHerbots/Inputmask
-$filter->equal('column')->inputmask($options = [], $icon = 'fas fa-pencil-alt');
+$filter->equal('column')->inputmask($options = [], $icon = 'fas fa-pencil-alt fa-fw');
 ```
 
 ### Select

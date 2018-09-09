@@ -37,7 +37,7 @@ EOT;
         $refresh = trans('admin.refresh');
 
         return <<<EOT
-<a class="btn btn-sm btn-primary grid-refresh" title="$refresh"><i class="fas fa-sync-alt"></i><span class="hidden-xs"> $refresh</span></a>
+<a class="btn btn-sm btn-primary grid-refresh" title="$refresh"><i class="fas fa-sync-alt fa-fw"></i><span class="hidden-xs"> $refresh</span></a>
 EOT;
     }
 }

@@ -13,9 +13,9 @@
         <h3 class="box-title">Available extensions</h3>
 
         <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus fa-fw"></i>
             </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times fa-fw"></i></button>
         </div>
     </div>
     <!-- /.box-header -->
@@ -32,7 +32,7 @@
                         {{ $extension['name'] }}
                     </a>
                     @if($extension['installed'])
-                        <span class="pull-right installed"><i class="fas fa-check"></i></span>
+                        <span class="pull-right installed"><i class="fas fa-check fa-fw"></i></span>
                     @endif
                 </div>
             </li>

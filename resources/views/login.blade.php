@@ -36,7 +36,7 @@
 
         @if($errors->has('username'))
           @foreach($errors->get('username') as $message)
-            <label class="control-label" for="inputError"><i class="fas fa-times-circle"></i>{{$message}}</label></br>
+            <label class="control-label" for="inputError"><i class="fas fa-times-circle fa-fw"></i>{{$message}}</label></br>
           @endforeach
         @endif
 
@@ -47,7 +47,7 @@
 
         @if($errors->has('password'))
           @foreach($errors->get('password') as $message)
-            <label class="control-label" for="inputError"><i class="fas fa-times-circle"></i>{{$message}}</label></br>
+            <label class="control-label" for="inputError"><i class="fas fa-times-circle fa-fw"></i>{{$message}}</label></br>
           @endforeach
         @endif
 

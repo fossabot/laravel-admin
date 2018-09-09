@@ -29,7 +29,7 @@ class Alert extends Widget implements Renderable
     /**
      * @var string
      */
-    protected $icon = 'fas fa-ban';
+    protected $icon = 'fas fa-ban fa-fw';
 
     /**
      * Alert constructor.

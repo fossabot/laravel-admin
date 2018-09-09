@@ -9,6 +9,6 @@
     </div>
     <a href="{{ $link }}" class="small-box-footer">
         {{ trans('admin.more') }}&nbsp;
-        <i class="fas fa-arrow-circle-right"></i>
+        <i class="fas fa-arrow-circle-right fa-fw"></i>
     </a>
 </div>

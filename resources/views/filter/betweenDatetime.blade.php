@@ -3,7 +3,7 @@
     <div class="col-sm-8" style="width: 390px">
         <div class="input-group input-group-sm">
             <div class="input-group-addon">
-                <i class="fas fa-calendar"></i>
+                <i class="fas fa-calendar fa-fw"></i>
             </div>
             <input type="text" class="form-control" id="{{$id['start']}}" placeholder="{{$label}}" name="{{$name['start']}}" value="{{ request($name['start'], array_get($value, 'start')) }}">
             <span class="input-group-addon" style="border-left: 0; border-right: 0;">-</span>

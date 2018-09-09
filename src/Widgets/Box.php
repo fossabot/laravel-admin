@@ -85,7 +85,7 @@ class Box extends Widget implements Renderable
     public function collapsable()
     {
         $this->tools[] =
-            '<button class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus"></i></button>';
+            '<button class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus fa-fw"></i></button>';
 
         return $this;
     }
@@ -98,7 +98,7 @@ class Box extends Widget implements Renderable
     public function removable()
     {
         $this->tools[] =
-            '<button class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times"></i></button>';
+            '<button class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times fa-fw"></i></button>';
 
         return $this;
     }

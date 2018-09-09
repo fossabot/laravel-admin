@@ -26,7 +26,7 @@
                     </span>
                     <div class="mailbox-attachment-info">
                         <a href="#" class="mailbox-attachment-name" style="word-break:break-all;">
-                            <i class="fas fa-camera"></i>&nbsp;&nbsp;
+                            <i class="fas fa-camera fa-fw"></i>&nbsp;&nbsp;
                             {!! isset($text_column) ? $row->column($text_column) : '' !!}
                         </a>
                         <span class="mailbox-attachment-size">
@@ -34,7 +34,7 @@
                             <span class="pull-right">
                                 {!! $row->column('__actions__') !!}
                                 <a href="{!! isset($server) ? $server . '/' . $row->column($image_column) : \Illuminate\Support\Facades\Storage::disk(config('admin.upload.disk'))->url($row->column($image_column)) !!}" target="_blank" download="custom-filename.jpg">
-                                    <i class="fas fa-cloud-download"></i>
+                                    <i class="fas fa-cloud-download fa-fw"></i>
                                 </a>
                             </span>
                         </span>

@@ -5,7 +5,7 @@
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="min-width: 32px;">
             <span class="{{ $group_name }}-label">{{ $default['label'] }}</span>
             &nbsp;&nbsp;
-            <span class="fas fa-caret-down"></span>
+            <span class="fas fa-caret-down fa-fw"></span>
         </button>
         <ul class="dropdown-menu {{ $group_name }}">
             @foreach($group as $index => $item)

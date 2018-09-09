@@ -598,7 +598,7 @@ class Field implements Renderable
      *
      * @return $this
      */
-    public function help($text = '', $icon = 'fas fa-info-circle')
+    public function help($text = '', $icon = 'fas fa-info-circle fa-fw')
     {
         $this->help = compact('text', 'icon');
 
