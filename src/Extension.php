@@ -297,7 +297,7 @@ abstract class Extension
      * @param string $icon
      * @param int    $parentId
      */
-    protected static function createMenu($title, $uri, $icon = 'fas fa-bars fa-fw', $parentId = 0)
+    protected static function createMenu($title, $uri, $icon = 'fas fa-bars', $parentId = 0)
     {
         $lastOrder = Menu::max('order');
 

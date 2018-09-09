@@ -32,10 +32,10 @@ EOT;
 <form class="form-group grid-checkbox-$name" style="text-align:left;" data-key="{$this->getKey()}">
     $radios
     <button type="submit" class="btn btn-info btn-xs pull-left">
-        <i class="fas fa-save fa-fw"></i>&nbsp;{$this->trans('save')}
+        <i class="fas fa-save"></i>&nbsp;{$this->trans('save')}
     </button>
     <button type="reset" class="btn btn-warning btn-xs pull-left" style="margin-left:10px;">
-        <i class="fas fa-trash fa-fw"></i>&nbsp;{$this->trans('reset')}
+        <i class="fas fa-trash"></i>&nbsp;{$this->trans('reset')}
     </button>
 </form>
 EOT;

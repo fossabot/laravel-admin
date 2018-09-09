@@ -12,7 +12,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
         <!-- Sidebar toggle button-->
-        <a href="#" class="fas sidebar-toggle fa-fw" data-toggle="push-menu" role="button">
+        <a href="#" class="fas sidebar-toggle" data-toggle="push-menu" role="button">
             <span class="sr-only">Toggle navigation</span>
         </a>
 
