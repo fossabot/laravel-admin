@@ -31,7 +31,7 @@
     <script src="{{ admin_asset ("/vendor/laravel-admin/AdminLTE/bootstrap/js/bootstrap.min.js") }}"></script>
     <script src="{{ admin_asset ("/vendor/laravel-admin/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js") }}"></script>
     <script src="{{ admin_asset ("/vendor/laravel-admin/AdminLTE/dist/js/adminlte.min.js") }}"></script>
-    <script src="{{ admin_asset ("/vendor/laravel-admin/AdminLTE/dist/js/adminlte.fix.min.js") }}"></script>
+    <script src="{{ admin_asset ("/vendor/laravel-admin/AdminLTE/dist/js/adminlte.fix.js") }}"></script>
     <script src="{{ admin_asset ("/vendor/laravel-admin/jquery-pjax/jquery.pjax.js") }}"></script>
     <script src="{{ admin_asset ("/vendor/laravel-admin/nprogress/nprogress.js") }}"></script>
     <script src="{{ admin_asset ("/vendor/laravel-admin/AdminLTE/plugins/iCheck/icheck.min.js") }}"></script>
