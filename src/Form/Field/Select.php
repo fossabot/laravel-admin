@@ -354,10 +354,22 @@ EOT;
             'placeholder' => $this->label,
         ], $this->config);
 
-        $configs = json_encode($configs);
-
         if (empty($this->script)) {
-            $this->script = "$(\"{$this->getElementClassSelector()}\").select2($configs);";
+            $this->script = '';
+
+            foreach ($configs as $key => $value) {
+                $dashCase = ltrim(strtolower(preg_replace('/[A-Z]([A-Z](?![a-z]))*/', '-$0', $key)), '-');
+
+                if (is_bool($value)) {
+                    $value = ($value) ? 'true' : 'false';
+                }
+
+                $this->script .= "$(\"{$this->getElementClassSelector()}\").attr(\"data-{$dashCase}\", \"{$value}\");";
+            }
+
+            $configs = json_encode($configs);
+
+            $this->script .= "$(\"{$this->getElementClassSelector()}\").select2($configs);";
         }
 
         if ($this->options instanceof \Closure) {
