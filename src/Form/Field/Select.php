@@ -127,7 +127,7 @@ $(document).on('change', "{$this->getElementClassSelector()}", function () {
                 d.text = d.$textField;
                 return d;
             })
-        }).trigger('change');
+        }).val('').trigger('change');
     });
 });
 EOT;
@@ -164,7 +164,7 @@ var refreshOptions = function(url, target) {
                 d.text = d.$textField;
                 return d;
             })
-        }).trigger('change');
+        }).val('').trigger('change');
     });
 };
 
