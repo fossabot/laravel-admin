@@ -10,6 +10,7 @@ return [
     |
     */
     'name' => 'Laravel-admin',
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin logo
@@ -20,6 +21,7 @@ return [
     |
     */
     'logo' => '<b>Laravel</b> admin',
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin mini logo
@@ -31,6 +33,7 @@ return [
     |
     */
     'logo-mini' => '<b>La</b>',
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin route settings
@@ -46,6 +49,7 @@ return [
         'namespace' => 'App\\Admin\\Controllers',
         'middleware' => ['web', 'admin'],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin install directory
@@ -57,6 +61,7 @@ return [
     |
     */
     'directory' => app_path('Admin'),
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin html title
@@ -66,6 +71,7 @@ return [
     |
     */
     'title' => 'Admin',
+
     /*
     |--------------------------------------------------------------------------
     | Access via `https`
@@ -75,6 +81,7 @@ return [
     |
     */
     'https' => env('ADMIN_HTTPS', false),
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin auth setting
@@ -98,6 +105,7 @@ return [
             ],
         ],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin upload setting
@@ -116,6 +124,7 @@ return [
             'file'  => 'files',
         ],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin database settings
@@ -146,6 +155,7 @@ return [
         'role_permissions_table' => 'admin_role_permissions',
         'role_menu_table'        => 'admin_role_menu',
     ],
+
     /*
     |--------------------------------------------------------------------------
     | User operation log setting
@@ -166,6 +176,7 @@ return [
             'admin/auth/logs*',
         ],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Admin map field provider
@@ -175,6 +186,7 @@ return [
     |
     */
     'map_provider' => 'google',
+
     /*
     |--------------------------------------------------------------------------
     | Application Skin
@@ -190,6 +202,7 @@ return [
     |
     */
     'skin' => 'skin-blue',
+
     /*
     |--------------------------------------------------------------------------
     | Application layout
@@ -203,6 +216,7 @@ return [
     |
     */
     'layout' => ['sidebar-mini'],
+
     /*
     |--------------------------------------------------------------------------
     | Login page background image
@@ -212,6 +226,7 @@ return [
     |
     */
     'login_background_image' => '',
+
     /*
     |--------------------------------------------------------------------------
     | Show version at footer
@@ -222,6 +237,7 @@ return [
     |
     */
     'show_version' => true,
+
     /*
     |--------------------------------------------------------------------------
     | Show environment at footer
@@ -231,6 +247,7 @@ return [
     |
     */
     'show_environment' => true,
+
     /*
     |--------------------------------------------------------------------------
     | Extension Directory
@@ -239,7 +256,8 @@ return [
     | When you use command `php artisan admin:extend` to generate extensions,
     | the extension files will be generated in this directory.
     */
-    'extension_dir' => admin_path('extensions'),
+    'extension_dir' => app_path('Admin/Extensions'),
+
     /*
     |--------------------------------------------------------------------------
     | Settings for extensions.
