@@ -130,6 +130,7 @@ $(document).on('change', "{$this->getElementClassSelector()}", function () {
         }).val('').trigger('change');
     });
 });
+$("{$this->getElementClassSelector()}").trigger('change');
 EOT;
 
         Admin::script($script);
@@ -182,6 +183,8 @@ $(document).on('change', "{$this->getElementClassSelector()}", function () {
         console.log('开始更新其它select的选择options');
     });
 });
+
+$("{$this->getElementClassSelector()}").trigger('change');
 EOT;
 
         Admin::script($script);
