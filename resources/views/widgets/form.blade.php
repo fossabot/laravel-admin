@@ -19,13 +19,13 @@
         <div class="col-md-8">
             @if(in_array('reset', $buttons))
             <div class="btn-group pull-left">
-                <button type="reset" class="btn btn-warning pull-right">{{ trans('admin.reset') }}</button>
+                <button type="reset" class="btn btn-warning pull-right" data-loading-text="<i class='fas fa-circle-notch fa-spin'></i>">{{ trans('admin.reset') }}</button>
             </div>
             @endif
 
             @if(in_array('submit', $buttons))
             <div class="btn-group pull-right">
-                <button type="submit" class="btn btn-info pull-right">{{ trans('admin.submit') }}</button>
+                <button type="submit" class="btn btn-info pull-right" data-loading-text="<i class='fas fa-circle-notch fa-spin'></i>">{{ trans('admin.submit') }}</button>
             </div>
             @endif
         </div>
