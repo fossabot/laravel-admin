@@ -23,8 +23,10 @@ trait HasAssets
      * @var array
      */
     public static $baseCss = [
-//        'vendor/laravel-admin/AdminLTE/bootstrap/css/bootstrap.min.css',
-//        'vendor/laravel-admin/font-awesome/css/font-awesome.min.css',
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+        'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+        'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic',
+
         'vendor/laravel-admin/laravel-admin/laravel-admin.css',
         'vendor/laravel-admin/nprogress/nprogress.css',
         'vendor/laravel-admin/sweetalert2/dist/sweetalert2.css',
@@ -39,7 +41,8 @@ trait HasAssets
      * @var array
      */
     public static $baseJs = [
-//        'vendor/laravel-admin/AdminLTE/bootstrap/js/bootstrap.min.js',
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+
         'vendor/laravel-admin/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js',
         'vendor/laravel-admin/AdminLTE/dist/js/app.min.js',
         'vendor/laravel-admin/jquery-pjax/jquery.pjax.js',
