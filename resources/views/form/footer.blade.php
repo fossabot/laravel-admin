@@ -9,7 +9,7 @@
 
         @if(in_array('submit', $buttons))
         <div class="btn-group pull-right">
-            <button type="submit" class="btn btn-primary">{{ trans('admin.submit') }}</button>
+            <button type="submit" class="btn btn-primary" data-loading-text="<i class='fas fa-circle-notch fa-spin'></i>">{{ trans('admin.submit') }}</button>
         </div>
 
         @if(in_array('continue_editing', $checkboxes))
@@ -28,7 +28,7 @@
 
         @if(in_array('reset', $buttons))
         <div class="btn-group pull-left">
-            <button type="reset" class="btn btn-warning">{{ trans('admin.reset') }}</button>
+            <button type="reset" class="btn btn-warning" data-loading-text="<i class='fas fa-circle-notch fa-spin'></i>">{{ trans('admin.reset') }}</button>
         </div>
         @endif
     </div>

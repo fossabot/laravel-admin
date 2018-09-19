@@ -32,14 +32,13 @@ NProgress.configure({parent: '#pjax-container'});
 
 $(document).on('pjax:timeout', function (event) {
     event.preventDefault();
-})
+});
 
 $(document).on('submit', 'form[pjax-container]', function (event) {
     $.pjax.submit(event, '#pjax-container')
 });
 
 $(document).on("pjax:popstate", function () {
-
     $(document).one("pjax:end", function (event) {
         $(event.target).find("script[data-exec-on-popstate]").each(function () {
             $.globalEval(this.text || this.textContent || this.innerHTML || '');

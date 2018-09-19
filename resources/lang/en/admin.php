@@ -98,6 +98,7 @@ return [
         'filter_placeholder' => 'Filter',
     ],
     'member_since' => 'Member since',
+    'home' => 'Home',
 
     'menu_titles' => [],
 ];

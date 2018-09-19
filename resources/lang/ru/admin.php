@@ -98,6 +98,7 @@ return [
         'filter_placeholder' => 'Фильтр',
     ],
     'member_since' => 'Зарегистрирован',
+    'home' => 'Главная',
 
     'menu_titles' => [],
 

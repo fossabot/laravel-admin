@@ -10,7 +10,7 @@
         <!-- breadcrumb start -->
         @if ($breadcrumb)
         <ol class="breadcrumb" style="margin-right: 30px;">
-            <li><a href="{{ admin_url('/') }}"><i class="fas fa-tachometer-alt"></i> Home</a></li>
+            <li><a href="{{ admin_url('/') }}"><i class="fas fa-tachometer-alt"></i> {{ trans('admin.home') }}</a></li>
             @foreach($breadcrumb as $item)
                 @if($loop->last)
                     <li class="active">
