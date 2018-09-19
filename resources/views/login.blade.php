@@ -64,6 +64,11 @@
 </div>
 <!-- /.login-box -->
 
+<script>
+    function LA() {}
+    LA.token = "{{ csrf_token() }}";
+</script>
+
 <!-- REQUIRED JS SCRIPTS -->
 {!! Admin::js() !!}
 
