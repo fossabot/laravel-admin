@@ -7,8 +7,10 @@
     <div class="icon">
         <i class="{{ $icon }}"></i>
     </div>
-    <a href="{{ $link }}" class="small-box-footer">
-        {{ trans('admin.more') }}&nbsp;
-        <i class="fas fa-arrow-circle-right"></i>
-    </a>
+    @if ($link)
+        <a href="{{ $link }}" class="small-box-footer">
+            {{ trans('admin.more') }}&nbsp;
+            <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    @endif
 </div>
