@@ -348,6 +348,19 @@ EOT;
     }
 
     /**
+     * Set allowClear parameter of select2.
+     * 
+     * @param boolean $val
+     *
+     * @return $this
+     */
+    public function allowClear($val) {
+        $this->config['allowClear'] = $val;
+
+        return $this;
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function render()
