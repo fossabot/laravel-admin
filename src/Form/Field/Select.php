@@ -386,22 +386,26 @@ EOT;
             ],
         ], $this->config);
 
-        if (empty($this->script)) {
-            $this->script = '';
+        foreach ($configs as $config_key => $config_value) {
+            $config_key = ltrim(strtolower(preg_replace('/[A-Z]([A-Z](?![a-z]))*/', '-$0', $config_key)), '-');
 
-            foreach ($configs as $key => $value) {
-                $dashCase = ltrim(strtolower(preg_replace('/[A-Z]([A-Z](?![a-z]))*/', '-$0', $key)), '-');
-
-                if (is_bool($value)) {
-                    $value = ($value) ? 'true' : 'false';
-                }
-
-                $this->script .= "$(\"{$this->getElementClassSelector()}\").attr(\"data-{$dashCase}\", \"{$value}\");";
+            if (is_bool($config_value)) {
+                $config_value = ($config_value) ? 'true' : 'false';
             }
 
+            if (is_array($config_value)) {
+                foreach ($config_value as $sub_config_key => $sub_config_value) {
+                    $this->attribute('data-'.$config_key.'--'.$sub_config_key, $sub_config_value);
+                }
+            } else {
+                $this->attribute('data-'.$config_key, $config_value);
+            }
+        }
+
+        if (empty($this->script)) {
             $configs = json_encode($configs);
 
-            $this->script .= "$(\"{$this->getElementClassSelector()}\").select2($configs);";
+            $this->script = "$(\"{$this->getElementClassSelector()}\").select2($configs);";
         }
 
         if ($this->options instanceof \Closure) {
