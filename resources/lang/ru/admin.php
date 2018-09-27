@@ -98,13 +98,13 @@ return [
         'filter_placeholder' => 'Фильтр',
     ],
     'member_since' => 'Зарегистрирован',
-    'home' => 'Главная',
+    'home'         => 'Главная',
 
     'menu_titles' => [],
 
     'stub' => [
-        'id' => 'ID',
+        'id'         => 'ID',
         'created_at' => 'Дата создания',
-        'updated_at' => 'Дата изменения'
-    ]
+        'updated_at' => 'Дата изменения',
+    ],
 ];

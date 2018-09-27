@@ -73,7 +73,10 @@ class Paginator extends AbstractTool
         ];
 
         $parameters = collect($parameters)->flatMap(function ($parameter, $key) {
-            if (!$parameter) { $parameter = 0; }
+            if (!$parameter) {
+                $parameter = 0;
+            }
+
             return [$key => "<b>$parameter</b>"];
         });
 

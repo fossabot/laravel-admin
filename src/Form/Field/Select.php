@@ -363,11 +363,12 @@ EOT;
     /**
      * Set allowClear parameter of select2.
      *
-     * @param boolean $val
+     * @param bool $val
      *
      * @return $this
      */
-    public function allowClear($val) {
+    public function allowClear($val)
+    {
         $this->config['allowClear'] = $val ? 'true' : 'false';
 
         return $this;
@@ -381,7 +382,7 @@ EOT;
         $configs = array_merge([
             'allowClear'  => true,
             'placeholder' => [
-                'id' => '',
+                'id'   => '',
                 'text' => $this->label,
             ],
         ], $this->config);
