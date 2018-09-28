@@ -96,7 +96,7 @@ class AdminTablesSeeder extends Seeder
                 'parent_id' => 2,
                 'order'     => 4,
                 'title'     => 'Roles',
-                'icon'      => 'fa-user',
+                'icon'      => 'fas fa-user',
                 'uri'       => 'auth/roles',
             ],
             [
