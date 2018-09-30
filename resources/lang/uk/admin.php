@@ -100,5 +100,5 @@ return [
 
     'member_since' => 'Зареєстрований',
 
-    'menu_titles'           => []
+    'menu_titles'           => [],
 ];
