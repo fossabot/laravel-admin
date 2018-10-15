@@ -24,7 +24,7 @@ trait HasAssets
      */
     public static $baseCss = [
         'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-        'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+        'https://use.fontawesome.com/releases/v5.4.1/css/all.css',
         'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic',
 
         'vendor/laravel-admin/laravel-admin/laravel-admin.css',
