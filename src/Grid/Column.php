@@ -519,7 +519,9 @@ class Column
 
         if ($this->isSorted()) {
             $type = $this->sort['type'] == 'desc' ? 'asc' : 'desc';
-            $icon .= "-amount-{$this->sort['type']}";
+
+            $iconType = $this->sort['type'] == 'desc' ? 'down' : 'up';
+            $icon .= "-{$iconType}";
         }
 
         $query = app('request')->all();
