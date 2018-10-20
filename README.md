@@ -20,6 +20,7 @@
     <a href="https://styleci.io/repos/48796179">
         <img src="https://styleci.io/repos/48796179/shield" alt="StyleCI">
     </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fartem-tverdokhlebov%2Flaravel-admin?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fartem-tverdokhlebov%2Flaravel-admin.svg?type=shield"/></a>
     <a href="https://packagist.org/packages/encore/laravel-admin">
         <img src="https://img.shields.io/packagist/l/encore/laravel-admin.svg?maxAge=2592000&&style=flat-square" alt="Packagist">
     </a>
@@ -151,3 +152,7 @@ Other
 License
 ------------
 `laravel-admin` is licensed under [The MIT License (MIT)](LICENSE).
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fartem-tverdokhlebov%2Flaravel-admin.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fartem-tverdokhlebov%2Flaravel-admin?ref=badge_large)
